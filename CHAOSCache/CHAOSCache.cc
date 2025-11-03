@@ -212,7 +212,7 @@ namespace gem5
                 }
             }
 
-            targetBlk->setCoherenceBits(CacheBlk::DirtyBit);
+            // targetBlk->setCoherenceBits(CacheBlk::DirtyBit);
         }
 
         Tick next_injection = curTick() + inter_fault_cycles_dist(rng) * tick_to_clock_ratio;
