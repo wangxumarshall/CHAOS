@@ -1,1 +1,6 @@
 .DS_Store
+.workbuddy/
+gem5/
+riscv-gnu-toolchain/
+*.log
+m5out/

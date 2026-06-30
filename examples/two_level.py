@@ -63,7 +63,7 @@ from caches import *
 default_binary = os.path.join(
     thispath,
     # "./test_program/nn",
-    "../gem5/tests/test-progs/hello/bin/riscv/linux/hello",
+    "../gem5/tests/test-progs/hello/bin/arm/linux/hello",
 )
 
 print(default_binary)
@@ -87,7 +87,7 @@ system.mem_mode = "timing"  # Use timing accesses
 system.mem_ranges = [AddrRange("512MiB")]  # Create an address range
 
 # Create a simple CPU
-system.cpu = RiscvO3CPU()
+system.cpu = ArmO3CPU()
 
 # Create an L1 instruction and data cache
 system.cpu.icache = L1ICache(args)
